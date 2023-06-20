@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(16, 188, 245),purple,  rgb(247, 107, 130));
+    background-size:auto;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.sign-up-form h1
+{
+font-style: italic;
+color: rgb(236, 221, 221);
+margin-bottom : 30px;
+
+}
+
+.signout-btn
+{
+    background-color:  rgb(12, 5, 5);
+    width: 40%;
+}
+
+
+
+button
+{
+color: #ffffff; /*Font color*/
+width: 100%;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+margin: 10px 0;
+border: none;
+outline: none;
+cursor: pointer;
+position: relative;
+}

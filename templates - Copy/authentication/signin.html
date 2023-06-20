@@ -1,0 +1,47 @@
+{% load static %} <!-- This line has been written so that we can load CSS templates from the static folder placed in
+    the root Directory of this project and then it has been further extended in href of this project to index.css -->
+    
+    <!DOCTYPE html>
+    
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>SignUp</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="{% static 'signin.css' %}">
+    
+        </head>
+        <body>        
+                <div class = "sign-in-form">
+                    {% for message in messages%}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                    <strong>Message:</strong> {{ message }}
+                    <button type=""button class="class" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true"> &times;</span>
+                    </button>
+                    </div>
+                    {% endfor %}
+    
+                    <h1> Welcome to SignIn Page </h1>
+    
+                    <form action="/signin" method="post">
+                    {% csrf_token %}
+                    
+                        <label for ="" class="field-Name">Username</label>
+                        <input type="text" class="input-box" id="username" name ="username" placeholder=" Enter your username " required>
+                        <br>
+         
+                        <label for ="" class= "field-Name">Password</label>
+                        <input type="password" class="input-box" id="pass1" name ="pass1" placeholder="Enter Your Password" required>
+                        <br>
+    
+                        <button type ="submit" class="signin-btn" id="signin"> Sign In </button>
+                        <h4> made with ♥ Ansh Mehta (21BCY10113)</h4>
+                    
+                    </form>
+                </div>
+            <script src="" async defer></script>
+        </body>
+    </html>

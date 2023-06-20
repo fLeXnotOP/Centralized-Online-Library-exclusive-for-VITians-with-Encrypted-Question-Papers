@@ -1,0 +1,14 @@
+{% autoescape off %}
+
+Welcome to the Login System Made by Ansh Mehta (21BCY10113). Thanks for using our website.
+
+Hello {{ name }}
+
+Your UserId is :- {{ Username }}
+
+Please Confirm your email by clicking on the following link 
+
+confirmation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}
+
